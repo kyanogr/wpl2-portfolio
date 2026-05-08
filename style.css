@@ -351,16 +351,27 @@ p {
     border-radius: inherit;
 }
 
-.section-leerdoelen {
+.section-wpl1 {
     background: #1a1c1f;
     padding: 4.5rem 0;
 }
 
-.section-leerdoelen h2 {
+.section-wpl1 h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     color: #62d4ff;
 }
+
+.section-wpl2 {
+    background: #121417;
+}
+
+.section-wpl2 h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #62d4ff;
+}
+
 
 .leerdoelen-list {
     list-style: disc inside;
@@ -380,6 +391,12 @@ p {
 
 .eindreflectie-download .button {
     display: inline-block;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.25rem;
 }
 
 #scrollToTop {
@@ -463,7 +480,8 @@ p {
     }
 
     .hero-projects {
-        justify-content: center;
+        display: flex;
+        margin-top: 1.25rem;
     }
 
     .grid-2 {
