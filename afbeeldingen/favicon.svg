@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <path d="M10 6 h44 a4 4 0 0 1 4 4 v44 a4 4 0 0 1 -4 4 h-44 a4 4 0 0 1 -4 -4 v-44 a4 4 0 0 1 4 -4z" fill="#2a8ad8"/>
-  <path d="M6 48 l6 -3 l6 4 l7 -3 l6 3 l7 -4 l6 3 l7 -3 l7 4 v5 a4 4 0 0 1 -4 4 h-44 a4 4 0 0 1 -4 -4z" fill="#f7a35c"/>
-  <text x="34" y="42" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="34" fill="#f26c4f">K</text>
-  <text x="32" y="40" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="34" fill="#fbf6d4">K</text>
-</svg>
