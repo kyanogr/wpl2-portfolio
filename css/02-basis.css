@@ -1,0 +1,72 @@
+*, *::before, *::after { box-sizing: border-box; min-width: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; overflow-x: clip; }
+
+body {
+  margin: 0;
+  color: var(--tekst);
+  background-color: var(--bg);
+
+  background-image:
+    linear-gradient(var(--raster) 1px, transparent 1px),
+    linear-gradient(90deg, var(--raster) 1px, transparent 1px);
+  background-size: 26px 26px;
+  font: 16px/1.6 var(--f-tekst);
+  overflow-x: clip;
+  position: relative; isolation: isolate;
+}
+
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: var(--papierbeeld) center / cover no-repeat;
+  opacity: .55;
+}
+
+img, svg { display: block; max-width: 100%; }
+
+a { color: inherit; }
+
+h1, h2, h3 { margin: 0; line-height: 1.05; text-wrap: balance; }
+
+h2 {
+  font-family: var(--f-bol);
+  font-weight: 400;
+  font-size: clamp(32px, 5vw, 52px);
+}
+
+h3 { font-size: 20px; font-weight: 700; }
+
+p { margin: 0 0 1em; max-width: 64ch; }
+
+.band { padding: clamp(48px, 7vw, 104px) var(--rand); position: relative; }
+.binnen { max-width: var(--max); margin-inline: auto; }
+
+.sectiekop { display: flex; align-items: end; gap: 16px; flex-wrap: wrap; margin-bottom: clamp(28px, 4vw, 48px); }
+.sectiekop .script { font-family: var(--f-script); font-size: clamp(28px, 4vw, 40px); color: var(--blauw); line-height: 1; }
+
+.knop {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 44px; padding: 10px 22px;
+  font: 700 15px/1 var(--f-tekst);
+  color: var(--inkt); background: var(--oranje);
+  border: 2px solid var(--inkt); border-radius: 999px;
+  text-decoration: none; cursor: pointer;
+  box-shadow: 3px 3px 0 var(--inkt);
+  transition: transform .15s, box-shadow .15s;
+}
+.knop:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0 var(--inkt); }
+.knop:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--inkt); }
+.knop.licht { background: var(--papier); }
+
+:focus-visible { outline: 3px solid var(--blauw); outline-offset: 3px; }
+
+.verborgen { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+.voorbeeld-melding {
+  font: 13px/1.4 var(--f-typ); opacity: .7; text-align: center; margin: 0 auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+}

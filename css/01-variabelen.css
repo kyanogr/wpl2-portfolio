@@ -1,0 +1,47 @@
+:root {
+  color-scheme: light;
+
+  --creme:   #fbf6d4;
+  --grijs:   #f3f1ea;
+  --inkt:    #1f2a33;
+
+  --blauw:        #2a8ad8;
+  --blauw-donker: #1c5fa3;
+  --koraal:       #f26c4f;
+  --oranje:       #f7a35c;
+  --groen:        #a8dc84;
+  --groen-zacht:  #cfeab8;
+  --map:          #f7c088;
+  --koraal-zacht: #fbc4b4;
+  --geel-zacht:   #fbf0a8;
+
+  --bg:      var(--creme);
+  --tekst:   var(--inkt);
+  --raster:  rgba(31,42,51,.09);
+  --papier:  #fffdf2;
+  --papier-tekst: var(--inkt);
+  --schaduw: 0 1px 0 rgba(31,42,51,.08), 0 14px 26px -10px rgba(31,42,51,.4);
+  --schaduw-klein: 0 6px 14px -8px rgba(31,42,51,.45);
+
+  --papierbeeld: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='1000' preserveAspectRatio='none'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.004 .006' numOctaves='4' seed='3'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .3 0 0 0 0 .18 0 0 0 .22 0'/%3E%3C/filter%3E%3Cfilter id='b'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .25 0 0 0 0 .15 0 0 0 .12 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3Crect width='100%25' height='100%25' filter='url(%23b)'/%3E%3C/svg%3E");
+
+  --f-script: "Caveat", "Comic Sans MS", cursive;
+  --f-bol:    "Bagel Fat One", "Arial Black", sans-serif;
+  --f-typ:    "Courier Prime", "Courier New", monospace;
+  --f-tekst:  "DM Sans", system-ui, sans-serif;
+  --f-kop:    "Gochi Hand", "Comic Sans MS", cursive;
+
+  --korrel: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+
+  --kreukels: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1400' height='1000' preserveAspectRatio='none'%3E%3Cfilter id='k' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.008 .011' numOctaves='5' seed='11'/%3E%3CfeDiffuseLighting lighting-color='%23ffffff' surfaceScale='4' diffuseConstant='1.15'%3E%3CfeDistantLight azimuth='225' elevation='52'/%3E%3C/feDiffuseLighting%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23k)'/%3E%3C/svg%3E");
+
+  --max: 1240px;
+  --navh: 67px;
+  --rand: max(5vw, 16px);
+  --radius: 6px;
+
+  --stop: .75s;
+}
+
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"]  { color-scheme: light; }

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 200">
+
+  <g stroke="#1f2a33" stroke-width="5" stroke-linejoin="round">
+    <rect x="22" y="78" width="176" height="108" rx="8" fill="#fbf6d4"/>
+    <path d="M22 78 h176 v30 h-176z" fill="#1f2a33"/>
+    <path d="M16 62 L184 18 L192 46 L24 90 Z" fill="#fbf6d4"/>
+  </g>
+  <g fill="#1f2a33">
+    <path d="M44 56 l24 -6 l-12 30 l-24 6z"/><path d="M92 44 l24 -6 l-12 30 l-24 6z"/><path d="M140 31 l24 -6 l-12 30 l-24 6z"/>
+  </g>
+  <g fill="#fbf6d4"><path d="M40 78 h22 l-14 30 h-22z"/><path d="M90 78 h22 l-14 30 h-22z"/><path d="M140 78 h22 l-14 30 h-22z"/></g>
+  <g font-family="Courier New, monospace" font-weight="bold" fill="#1f2a33" font-size="17">
+    <text x="38" y="134">SCENE 12</text><text x="38" y="158">TAKE  3</text>
+  </g>
+  <rect x="140" y="122" width="44" height="44" rx="6" fill="#f26c4f" stroke="#1f2a33" stroke-width="4"/>
+  <path d="M155 134 l16 10 l-16 10z" fill="#fbf6d4"/>
+</svg>
