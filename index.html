@@ -1,261 +1,335 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kyano Grieten</title>
-    <link rel="icon" href="./images/favicon.png">
-    <link rel="stylesheet" href="./style.css">
-    <script defer src="./script.js"></script>
-</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kyano Grieten · Portfolio</title>
+  <link rel="icon" href="afbeeldingen/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="afbeeldingen/favicon.png" type="image/png">
+  <meta name="description" content="Portfolio van Kyano Grieten, student Digitale Vormgeving aan PXL: design en front-end development.">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Caveat:wght@600;700&family=Courier+Prime:wght@400;700&family=DM+Sans:wght@400;700&family=Fredoka:wght@700&family=Gochi+Hand&display=swap">
+
+  <link rel="stylesheet" href="css/01-variabelen.css">
+  <link rel="stylesheet" href="css/02-basis.css">
+  <link rel="stylesheet" href="css/03-componenten.css">
+  <link rel="stylesheet" href="css/04-secties.css">
+  <link rel="stylesheet" href="css/05-responsive.css">
+  <link rel="stylesheet" href="css/06-animaties.css">
+</head>
 <body>
 
-<header class="site-header" id="top">
-    <div class="container header-inner">
-        <a href="#home" class="home">
-            <span class="name">Kyano Grieten</span>
-        </a>
-
-        <nav id="site-nav" class="site-nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Over mij</a></li>
-                <li><a href="#projects">Projecten</a></li>
-                <li><a href="#special">Speciaal</a></li>
-                <li><a href="#contact">Contacteer</a></li>
-                <li><a href="wpl1enwpl2.html">WPL1 & WPL2</a></li>
-            </ul>
-        </nav>
-        <button id="hamburger" class="hamburger">☰</button>
-    </div>
+<header class="nav">
+  <div class="binnen">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#over-mij">Over mij</a></li>
+      <li><a href="#projecten">Projecten</a></li>
+    </ul>
+    <a class="logo" href="#home">Kyano Grieten</a>
+    <ul>
+      <li><a href="#diensten">Wat ik doe</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="wpl1-en-wpl2.html">WPL1 &amp; WPL2</a></li>
+    </ul>
+  </div>
 </header>
 
-<main id="main">
-    <section id="home" class="hero">
-        <div class="container hero-grid">
-            <figure class="hero-media">
-                <img src="./images/hero-image.jpg" alt="portretafbeelding" width="1200" height="550"/>
-            </figure>
+<main>
 
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="accent">Mijn</span> Portfolio
-                </h1>
-                <p class="hero-text">
-                    Ik combineer creativiteit en techniek om ideeën tot leven te brengen. Scroll verder en ontdek mijn
-                    werk in design en front-end development.
-                </p>
+<section class="hero opening" id="home">
+ <div class="opening-sticky">
 
-                <div class="hero-projects">
-                    <a class="button button-primary" href="#projects">Ontdek projecten</a>
-                </div>
-            </div>
+  <div class="binnenkant">
+    <div class="inhoudkaart">
+      <img class="knijper groot" src="afbeeldingen/decoratie/knijper.svg" alt="">
+      <p class="hi">hey, ik ben kyano!</p>
+      <h2>Inhoud</h2>
+      <ol class="inhoud">
+        <li><a href="#over-mij"><span>01</span>Over mij</a></li>
+        <li><a href="#projecten"><span>02</span>Projecten</a></li>
+        <li><a href="#diensten"><span>03</span>Wat ik doe</a></li>
+        <li><a href="#contact"><span>04</span>Contact</a></li>
+      </ol>
+      <p class="intro-kort">Ik combineer creativiteit en technologie om ideeën tot leven te brengen.</p>
+      <a class="knop" href="#over-mij">Open het dossier <span class="stuiter">↓</span></a>
+      <img class="krabbel-doodle" src="afbeeldingen/stickers/doodles.svg" alt="">
+    </div>
+  </div>
+
+  <div class="bord-wrap omslag" id="omslag">
+    <img class="knijper groot wiebel" src="afbeeldingen/decoratie/knijper.svg" alt="">
+
+    <div class="bord">
+      <span class="gaatjes" aria-hidden="true"></span>
+
+      <h1 class="bolletters" aria-label="Mijn portfolio">
+        <span class="regel">
+          <span class="l" style="--i:0">P</span><span class="l" style="--i:1">o</span><span class="l" style="--i:2">r</span><span class="l" style="--i:3">t</span>
+        </span>
+        <span class="regel inspring">
+          <span class="l" style="--i:4">f</span><span class="l" style="--i:5">o</span><span class="l" style="--i:6">l</span><span class="l" style="--i:7">i</span><span class="l" style="--i:8">o</span>
+        </span>
+      </h1>
+
+      <div class="selectie plak" style="--d:.9s">
+        <span>2026</span>
+        <i></i><i></i><i></i><i></i>
+      </div>
+      <img class="cursor" src="afbeeldingen/decoratie/cursor.svg" alt="">
+
+    </div>
+
+    <figure class="tekensticker st-vliegtuig plak" style="--d:.2s">
+      <img src="afbeeldingen/stickers/vliegtuig.svg" alt="">
+    </figure>
+    <figure class="tekensticker st-pas plak" style="--d:.35s">
+      <img src="afbeeldingen/stickers/reispas.svg" alt="">
+    </figure>
+    <figure class="tekensticker st-klapper plak" style="--d:.5s">
+      <img src="afbeeldingen/stickers/klapper.svg" alt="">
+    </figure>
+    <figure class="tekensticker st-plaat plak" style="--d:.65s">
+      <img src="afbeeldingen/stickers/plaat.svg" alt="">
+    </figure>
+    <figure class="tekensticker st-camera plak" style="--d:.8s">
+      <img src="afbeeldingen/stickers/camera.svg" alt="">
+    </figure>
+
+    <img class="paperclip-los wiebel" src="afbeeldingen/decoratie/paperclip.svg" alt="">
+  </div>
+
+  <a class="scrollhint" href="#over-mij">scroll om de map te openen <span>↓</span></a>
+ </div>
+</section>
+
+<div class="dossiers">
+<div class="kast-binnen">
+
+<span class="anker" id="over-mij"></span>
+<div class="dossier-map" data-map="01">
+  <a class="map-tab" href="#over-mij">01 · over mij</a>
+  <div class="map-binnen">
+<section class="vel over">
+  <div class="scheurvel een-vel">
+    <img class="plakker wiebel" src="afbeeldingen/decoratie/ster-blauw.svg" alt="" style="left:50%;top:90%;width:46px">
+    <img class="plakker wiebel" src="afbeeldingen/decoratie/ster-geel.svg" alt="" style="right:30%;top:68%;width:40px">
+
+    <div class="om-pas">
+      <div class="badge-wrap">
+        <span class="koord" aria-hidden="true"></span>
+        <div class="pas">
+          <span class="badge-gat" aria-hidden="true"></span>
+          <p class="pas-kop">PORTFOLIO PAS<small>Nr. KG-2026</small></p>
+          <div class="pas-foto fotozon"><img src="afbeeldingen/profiel/kyano.png" alt="Foto van Kyano Grieten"></div>
+          <dl class="pas-velden">
+            <div><dt>Naam</dt><dd>Kyano Grieten</dd></div>
+            <div><dt>Leeftijd</dt><dd>19 jaar</dd></div>
+          </dl>
+          <p class="handtekening">Kyano</p>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <section id="about" class="section section-about">
-        <div class="container grid-2">
-            <div>
-                <h2>Over mij</h2>
-                <p>
-                    Hey! Ik ben <strong>Kyano Grieten</strong>, een 19 jarige student Digitale Vormgeving aan PXL, met
-                    een passie
-                    voor creatief design en programmeren. Ik combineer technische skills met een oog voor detail en
-                    mooie interface
-                    Persoonlijk hou ik het meeste van design en is design ook mijn sterkte, maar ik vind het ook leuk om
-                    te programmeren en zo mijn ontwerpen tot leven te brengen.
-                </p>
-                <ul class="badges" aria-label="Sterktes">
-                    <li>Creatief</li>
-                    <li>Precisiegericht</li>
-                    <li>Kwaliteitsgericht</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Waarom deze opleiding?</h3>
-                <p>
-                    Ik koos voor <em>Digitale Vormgeving</em> omdat ik graag creatief bezig ben. Ik heb al wat ervaring
-                    met programma's zoals Adobe Photoshop en Illustrator, maar ik wil mijn skills verder ontwikkelen en
-                    nieuwe tools leren kennen. Daarnaast ben ik ook geïnteresseerd in webontwikkeling en wil ik leren
-                    hoe ik mijn ontwerpen kan omzetten in functionele websites en applicaties.
-                </p>
-                <p class="note">
-                    Tools die ik regelmatig gebruik: Webstorm, GitHub, Adobe Photoshop, Adobe Illustrator, AI.
-                </p>
-            </div>
+    <div class="om-intro">
+      <h2 class="hey">Hey, ik ben Kyano!</h2>
+      <p>Ik ben 19 jaar en student Digitale Vormgeving aan PXL. Ik heb een passie voor creatief ontwerp: ik combineer technische skills met een oog voor detail en mooie interfaces.</p>
+      <p>Design is mijn grootste sterkte, en ik vind het heerlijk om een idee helemaal uit te werken tot het klopt.</p>
+
+      <h3 class="kop">Eigenschappen</h3>
+
+      <div class="check">
+        <p class="check-kop">BAGAGECHECK <span>✓ klaar voor vertrek</span></p>
+        <ul>
+          <li><b>Creatief</b><span>ideeën, kleur en vorm</span></li>
+          <li><b>Precisiegericht</b><span>elke pixel telt</span></li>
+          <li><b>Kwaliteitsgericht</b><span>pas af als het klopt</span></li>
+        </ul>
+      </div>
+
+      <h3 class="kop">Talen</h3>
+      <div class="stempels">
+        <div class="taalstempel st-rond"><b>NL</b><span>Nederlands</span><small>100%</small></div>
+        <div class="taalstempel st-recht"><b>EN</b><span>Engels</span><small>100%</small></div>
+        <div class="taalstempel st-ovaal"><b>FR</b><span>Frans</span><small>10%</small></div>
+      </div>
+    </div>
+
+    <div class="om-reis">
+      <h3 class="kop">Opleiding</h3>
+      <div class="ticket-pas">
+        <div class="tp-hoofd">
+          <span class="tp-label">Instapkaart</span>
+          <div class="tp-route"><b>IK</b><span class="tp-lijn" aria-hidden="true">✈</span><b>DV</b></div>
+          <dl>
+            <div><dt>Bestemming</dt><dd>Digitale Vormgeving</dd></div>
+            <div><dt>School</dt><dd>PXL</dd></div>
+            <div><dt>Status</dt><dd class="tp-status">aan boord · bezig</dd></div>
+          </dl>
         </div>
-    </section>
+        <div class="tp-strook" aria-hidden="true"><span>GATE</span><b>DV</b><i class="tp-code"></i></div>
+      </div>
 
-    <section id="projects" class="section section-projects">
-        <div class="container">
-            <div class="section-head">
-                <h2>Projecten</h2>
-                <div class="filters" role="tablist" aria-label="Projectfilter">
-                    <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">Alle</button>
-                    <button class="filter" data-filter="school" role="tab">School</button>
-                    <button class="filter" data-filter="niet-school" role="tab">Niet‑school</button>
-                </div>
-            </div>
+      <h3 class="kop">Tools</h3>
+      <ul class="toolrij">
+        <li><span class="tool" style="--c:#31a8ff;--t:#001e36"><img src="afbeeldingen/tools/photoshop.png" alt=""></span>Photoshop</li>
+        <li><span class="tool" style="--c:#ff9a00;--t:#330000"><img src="afbeeldingen/tools/illustrator.png" alt=""></span>Illustrator</li>
+        <li><span class="tool" style="--c:#ff3366;--t:#49021f"><img src="afbeeldingen/tools/indesign.png" alt=""></span>InDesign</li>
+        <li><span class="tool" style="--c:#a259ff;--t:#1e1e1e"><img src="afbeeldingen/tools/figma.png" alt=""></span>Figma</li>
+      </ul>
+    </div>
 
-            <div class="cards">
-                <article class="card" data-category="school">
-                    <img class="card-img" src="./images/image0.png" alt="Take-away website" width="960"
-                         height="300"/>
-                    <div class="card-body">
-                        <h3 class="card-title">Take-away website</h3>
-                        <p class="card-meta">
-                            Vak: <strong>Scripting</strong> · Rol: <strong>Developer</strong>
-                        </p>
-                        <p>
-                            Werkende website voor een fictieve take-away zaak. Gemaakt met HTML, CSS en JavaScript voor
-                            het examen Scripting.
-                        </p>
-                        <ul class="tags">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                        </ul>
-                    </div>
-                </article>
+    <div class="om-waarom">
+      <div class="notitie-blad">
+        <img class="clip" src="afbeeldingen/decoratie/paperclip.svg" alt="">
+        <h3>Waarom deze opleiding?</h3>
+        <ul>
+          <li><b>Liefde voor creatief werk</b>Daarom koos ik voor Digitale Vormgeving.</li>
+          <li><b>Verder groeien</b>Ik werk al met Photoshop en Illustrator en wil nieuwe tools leren.</li>
+          <li><b>Websites bouwen</b>Code boeit me, al kan ik er nog niet veel van. Daar wil ik zeker op oefenen.</li>
+        </ul>
+        <p class="vaak"><b>Vaak gebruikt:</b> Photoshop, Illustrator</p>
+      </div>
+      <div class="bagagelabel">
+        <span class="label-gat" aria-hidden="true"></span>
+        <p class="label-kop">Contact <small>bij verlies: bel mij!</small></p>
+        <ul>
+          <li><b>Mail</b><a href="mailto:kyano.grieten@gmail.com">kyano.grieten@gmail.com</a></li>
+          <li><b>Telefoon</b><a href="tel:+32497247034">+32 497 24 70 34</a></li>
+          <li><b>LinkedIn</b><a href="https://www.linkedin.com/in/kyano-grieten-a18251410/?locale=nl">kyano-grieten</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+  </div>
+</div>
 
-                <article class="card" data-category="school">
-                    <img class="card-img" src="./images/image1.png" alt="portfolio" width="960"
-                         height="300"/>
-                    <div class="card-body">
-                        <h3 class="card-title">Portfolio website</h3>
-                        <p class="card-meta">
-                            Vak: <strong>Werkplekleren 1</strong> · Rol: <strong>Developer</strong>
-                        </p>
-                        <p>
-                            Mijn portfolio website die ik zelf ontworpen en ontwikkeld heb met HTML, CSS en JavaScript.
-                        </p>
-                        <ul class="tags">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                        </ul>
-                    </div>
-                </article>
+<span class="anker" id="projecten"></span>
+<div class="dossier-map" data-map="02">
+  <a class="map-tab" href="#projecten">02 · projecten</a>
+  <div class="map-binnen">
+<section class="vel werk">
+  <div class="krijtband">
+  <div class="binnen">
+    <div class="werkkop">
+      <span class="nummer" data-in>01</span>
+      <h2 class="veeg" data-in style="--d:.15s">Design</h2>
+      <p class="blokletters" data-in style="--d:.3s">PROJECTEN</p>
+    </div>
 
-                <article class="card" data-category="school">
-                    <img class="card-img" src="./images/image2.jpg" alt="social media post" width="960"
-                         height="750"/>
-                    <div class="card-body">
-                        <h3 class="card-title">Social media post Monolith</h3>
-                        <p class="card-meta">
-                            Vak: <strong>Graphic Skills 2</strong> · Rol: <strong>Ontwerper</strong>
-                        </p>
-                        <p>
-                            Social media post gemaakt voor een fictief AI gegenereerd
-                            drankje met verschillende smaken.
-                        </p>
-                        <ul class="tags">
-                            <li>Illustrator</li>
-                            <li>Photoshop</li>
-                            <li>AI</li>
-                        </ul>
-                    </div>
-                </article>
+    <ul class="labels" id="filters" aria-label="Filter projecten"></ul>
+    <ul class="raster" id="projectraster"></ul>
+  </div>
+  </div>
+</section>
+  </div>
+</div>
 
-                <article class="card" data-category="niet-school">
-                    <img class="card-img" src="./images/image3.png" alt="logo bar" width="960"
-                         height="750"/>
-                    <div class="card-body">
-                        <h3 class="card-title">Logo 'Bar Puur'</h3>
-                        <p>
-                            Logo ontworpen voor de zomer bar van een neef gelegen aan een kasteel. Geinspireerd door andere logo's zoals 'bar looi'. Gemaakt
-                            met Adobe
-                            Illustrator en photoshop.
-                        </p>
-                        <ul class="tags">
-                            <li>Photoshop</li>
-                            <li>Illustrator</li>
-                            <li>Precisie</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+<span class="anker" id="diensten"></span>
+<div class="dossier-map" data-map="03">
+  <a class="map-tab" href="#diensten">03 · wat ik doe</a>
+  <div class="map-binnen">
+<section class="vel band diensten">
+  <div class="doe">
+    <div class="doe-kop" data-in>
+      <p class="script">van idee tot ontwerp</p>
+      <h2>Wat ik doe</h2>
+      <p>Twee dingen waar ik graag mijn tijd in steek. Kies maar uit de kassabon.</p>
+      <img class="doe-doodle" src="afbeeldingen/stickers/doodles.svg" alt="">
+    </div>
 
-    <section id="special" class="section section-special">
-        <div class="container grid-2">
+    <div class="bon-wrap" data-in style="--d:.1s">
+    <img class="punaise" src="afbeeldingen/decoratie/punaise.svg" alt="">
+    <article class="bon">
+      <p class="bon-zaak">STUDIO KYANO</p>
+      <p class="bon-sub">bon nr. 01 · grafisch ontwerp</p>
+      <h3>Grafisch ontwerp</h3>
+      <p class="bon-tekst">Beelden die opvallen en kloppen tot in het detail.</p>
+      <ul>
+        <li><span>Logo's</span><b>✓</b></li>
+        <li><span>Social media posts</span><b>✓</b></li>
+        <li><span>Photoshop &amp; Illustrator</span><b>✓</b></li>
+      </ul>
+      <p class="bon-totaal"><span>TOTAAL</span><b>met liefde gemaakt</b></p>
+      <i class="bon-code" aria-hidden="true"></i>
+    </article>
+    </div>
 
-            <section id="languages" class="section">
-                <div class="skills-col">
-                    <h2>Talen</h2>
+    <div class="bon-wrap bon-2" data-in style="--d:.2s">
+    <img class="punaise" src="afbeeldingen/decoratie/punaise.svg" alt="">
+    <article class="bon">
+      <p class="bon-zaak">STUDIO KYANO</p>
+      <p class="bon-sub">bon nr. 02 · UI/UX-design</p>
+      <h3>UI/UX-design</h3>
+      <p class="bon-tekst">Duidelijke, gebruiksvriendelijke schermen.</p>
+      <ul>
+        <li><span>Wireframes</span><b>✓</b></li>
+        <li><span>Klikbare prototypes</span><b>✓</b></li>
+        <li><span>Figma</span><b>✓</b></li>
+      </ul>
+      <p class="bon-totaal"><span>TOTAAL</span><b>pixel-perfect</b></p>
+      <i class="bon-code" aria-hidden="true"></i>
+    </article>
+    </div>
+  </div>
+</section>
+  </div>
+</div>
 
-                    <div class="skill" role="group">
-                        <div class="skill-row">
-                            <span id="taal-nl" class="skill-label">Nederlands</span>
-                            <span class="skill__value" aria-hidden="true">100%</span>
-                        </div>
-                        <div class="skill-bar" role="progressbar">
-                            <span class="skill-fill" style="--level: 100%"></span>
-                        </div>
-                    </div>
+<span class="anker" id="contact"></span>
+<div class="dossier-map" data-map="04">
+  <a class="map-tab" href="#contact">04 · contact</a>
+  <div class="map-binnen">
+<section class="vel band contact">
+  <div class="papier ansicht luchtpost" data-in>
+    <img class="ansicht-clip" src="afbeeldingen/decoratie/paperclip.svg" alt="">
+    <span class="par-avion" aria-hidden="true">GRI AVION · LUCHTPOST</span>
+    <div class="links">
+      <h2>Laten we samenwerken</h2>
+      <p>Interesse om samen te werken of heb je feedback? Stuur me gerust een berichtje.</p>
+      <ul class="contactlijst">
+        <li><b>E-mail</b>kyano.grieten@gmail.com</li>
+        <li><b>Telefoon</b>+32 497 24 70 34</li>
+        <li><b>LinkedIn</b><a href="https://www.linkedin.com/in/kyano-grieten-a18251410/?locale=nl">linkedin.com/in/kyano-grieten</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="zegel-hoek">
+        <div class="postzegel">K</div>
+        <span class="poststempel" aria-hidden="true">VERZONDEN<br><b>2026</b></span>
+      </div>
+      <form id="contactformulier" action="https://formspree.io/f/xdegyqde" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Nieuw kaartje via je portfolio">
+        <label for="naam">Naam</label>
+        <input id="naam" name="naam" autocomplete="name">
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" autocomplete="email">
+        <label for="bericht">Bericht</label>
+        <textarea id="bericht" name="bericht"></textarea>
+        <button class="knop post-knop" type="submit"><span class="post-icoon" aria-hidden="true">✈</span>Verstuur je kaartje</button>
+        <p class="formmelding" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+  </div>
+</div>
 
-                    <div class="skill" role="group">
-                        <div class="skill-row">
-                            <span id="taal-en" class="skill-label">Engels</span>
-                            <span class="skill-value" aria-hidden="true">100%</span>
-                        </div>
-                        <div class="skill-bar" role="progressbar">
-                            <span class="skill-fill" style="--level: 100%"></span>
-                        </div>
-                    </div>
+</div>
+</div>
 
-                    <div class="skill" role="group">
-                        <div class="skill-row">
-                            <span id="taal-fr" class="skill-label">Frans</span>
-                            <span class="skill-value" aria-hidden="true">10%</span>
-                        </div>
-                        <div class="skill-bar" role="progressbar">
-                            <span class="skill-fill" style="--level: 10%"></span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div>
-                <h3>Tools & skills</h3>
-                <ul class="tools">
-                    <li>Webstorm</li>
-                    <li>GitHub</li>
-                    <li>Figma</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe InDesign</li>
-                    <li>Adobe Illustrator</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section section-contact">
-        <div class="container">
-            <h2>Contacteer</h2>
-            <p>
-                Zin om samen te werken of feedback te geven?
-                <a href="mailto:kyano.grieten@gmail.com">kyano.grieten@gmail.com</a>
-            </p>
-            <ul class="contact-list">
-                <li><a href="https://github.com/kyanogr" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/kyano-grieten-a18251410/?locale=nl" target="_blank">LinkedIn</a></li>
-                <li><a href="wpl1enwpl2.html">/WPL1 & WPL2</a> (WPL1: situering DVO en eindreflectie · WPL2: case, mijn aandeel, reflectie en deliverables)</li>
-            </ul>
-        </div>
-    </section>
 </main>
 
-<footer class="site-footer">
-    <div class="container footer-inner">
-        <p>© <span id="year"></span> Kyano Grieten. Alle rechten voorbehouden.</p>
-        <nav>
-            <a href="privacy.txt">Privacy‑richtlijnen</a>
-        </nav>
-    </div>
+<footer class="footer">
+  <p class="groot">Kyano Grieten</p>
+  <small>© Kyano Grieten. Alle rechten voorbehouden. · <a href="privacy.txt">Privacy-richtlijnen</a> · <a href="#home">Naar boven ↑</a></small>
 </footer>
-<button id="scrollToTop" title="Ga naar boven">↑</button>
+
+<script src="js/projecten.js"></script>
+<script src="js/animaties.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
